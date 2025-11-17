@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('your-bg.jpg') center/cover no-repeat fixed;
+            color: white;
+        }
+
+        .overlay {
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.55);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.18);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            font-size: 3rem;
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        p.subtext {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            color: #e6e6e6;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info,
+        .contact-form {
+            flex: 1;
+            min-width: 280px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            font-family: 'Playfair Display', serif;
+            color: gold;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .line {
+            width: 60px;
+            height: 3px;
+            background: gold;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            margin-bottom: 18px;
+        }
+
+        .info-item span {
+            font-weight: 500;
+            color: gold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: gold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid gold;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 140px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: gold;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #d4af37;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="subtext">Have questions or want to reach out? We're always here to help.</p>
+
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2>Reach Us</h2>
+                    <div class="line"></div>
+
+                    <div class="info-item"><span>Email:</span> info@savvyframes.com</div>
+                    <div class="info-item"><span>Phone:</span> +91 98765 43210</div>
+                    <div class="info-item"><span>Address:</span> Mumbai, Maharashtra</div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Send a Message</h2>
+                    <div class="line"></div>
+
+                    <form>
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" />
+
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" />
+
+                        <label>Message</label>
+                        <textarea placeholder="Write your message..."></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

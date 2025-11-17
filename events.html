@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events — The Savvy Frames</title>
+  <meta name="description" content="Upcoming screenings and events by The Savvy Frames." />
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/firebase-init.js" type="module"></script>
+  <script defer src="js/events.js" type="module"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="movies.html">Movies</a>
+        <a href="events.html">Events</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="join.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a href="join.html" class="button">Join Now</a></div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h1 class="section-title gold-text">Events & Screenings</h1>
+      <div id="eventsList" class="grid events-grid" aria-live="polite"></div>
+      <div class="center"><a href="join.html" class="button">Join the Club</a></div>
+    </section>
+
+    <!-- Admin create event (hidden unless admin) -->
+    <section id="adminSection" class="section fade-in" style="display:none;">
+      <h2>Create Event</h2>
+      <form id="createEventForm" class="form">
+        <input name="title" placeholder="Event title" required />
+        <input name="date" type="datetime-local" required />
+        <input name="location" placeholder="Location" />
+        <input name="posterUrl" placeholder="Poster URL (optional)" />
+        <textarea name="description" placeholder="Short description"></textarea>
+        <button class="button" type="submit">Create Event</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

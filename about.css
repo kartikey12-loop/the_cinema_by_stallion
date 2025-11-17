@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: "Poppins", sans-serif; color: #fff; }
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95)),
+              url('film-bg.jpg') center/cover fixed no-repeat;
+}
+
+/* Reusable Container */
+.container { width: 92%; max-width: 1100px; margin: 0 auto; }
+
+/* ===== HEADER ===== */
+.site-header {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  padding: 1rem 0;
+  box-shadow: 0 0 15px rgba(255,165,0,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.container.nav-wrap { display: flex; justify-content: space-between; align-items: center; }
+.logo h1 { color: #FFA500; margin: 0; font-size: 1.6rem; }
+.logo .by-stallion { color: #fff; font-size: 0.9rem; }
+.main-nav { display: flex; gap: 12px; }
+.main-nav a {
+  color: #fff; text-decoration: none; padding: 0.4rem 0.9rem; border-radius: 30px;
+  transition: background .18s, color .18s, transform .12s;
+}
+.main-nav a:hover, .main-nav a.active {
+  background: #7a00ff; color: #fff; transform: translateY(-2px);
+}
+
+/* Hamburger */
+.nav-toggle { display: none; flex-direction: column; justify-content: space-between; width: 26px; height: 20px; background: none; border: none; cursor: pointer; }
+.nav-toggle .bar { width: 100%; height: 3px; background: #FFD700; border-radius: 3px; transition: all 0.3s ease; }
+.nav-toggle.active .bar:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav-toggle.active .bar:nth-child(2) { opacity: 0; }
+.nav-toggle.active .bar:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+/* ===== Hero Section ===== */
+.about-hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  background: radial-gradient(circle at center, rgba(255,215,0,0.08), transparent 70%);
+}
+.gold-text { color: #FFD700; }
+.cursive { font-family: "Brush Script MT", "Lucida Handwriting", cursive; font-size: 2.8rem; }
+.hero-sub { max-width: 700px; margin: 0 auto; color: #ddd; font-size: 1.1rem; }
+
+/* ===== About Content ===== */
+.about-content { padding: 3rem 1rem 4rem; display: flex; flex-direction: column; gap: 2rem; }
+.about-card {
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,215,0,0.08);
+  border-radius: 14px;
+  padding: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(255,165,0,0.15);
+}
+.section-title { color: #FFD700; margin-bottom: 1rem; font-size: 1.6rem; text-align: center; }
+.about-card p { color: #e0e0e0; line-height: 1.6; }
+.about-list { list-style: none; padding: 0; color: #fff; }
+.about-list li { margin-bottom: 0.5rem; font-size: 1.05rem; }
+
+.button {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: linear-gradient(90deg, #FFD700, #FFA500);
+  color: #000;
+  border-radius: 50px;
+  padding: 0.8rem 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(255,215,0,0.3); }
+
+/* ===== Footer ===== */
+.site-footer { background: rgba(10,10,10,0.9); color: #cfcfcf; padding: 2rem 0; border-top: 1px solid rgba(255,215,0,0.05); }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 8px; }
+.socials { display: flex; gap: 8px; }
+.social-icon { width: 26px; height: 26px; }
+
+/* Responsive */
+@media (max-width:600px) {
+  .nav-toggle { display: flex; }
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background: #111;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+  }
+  .main-nav.active { display: flex; }
+  .cursive { font-size: 2.2rem; }
+}
+

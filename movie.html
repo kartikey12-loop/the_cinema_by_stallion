@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Movie Details</title>
+<link rel="stylesheet" href="movie.css" />
+</head>
+<body>
+<!-- Login Button -->
+<button id="adminBtn" class="login-btn">Login</button>
+
+
+<!-- Banner -->
+<div id="movieBanner" class="movie-banner"></div>
+
+
+<section class="container movie-details">
+<img id="poster" class="detail-poster" />
+<div class="detail-text" id="movieInfo"></div>
+</section>
+
+
+<section class="container similar-section">
+<h2 class="gold-text">Similar Movies</h2>
+<div id="similarGrid" class="similar-grid"></div>
+</section>
+
+
+<!-- Admin Panel -->
+<div id="adminPanel" class="admin-panel" aria-hidden="true">
+<div class="admin-panel-inner">
+<h3 class="admin-title">Admin Review Editor</h3>
+
+
+<div class="admin-field">
+<label>Story & Screenplay</label>
+<input id="storyScoreInput" type="number" min="0" max="10" step="0.5" class="admin-input" />
+</div>
+
+
+<div class="admin-field">
+<label>Acting & Performances</label>
+<input id="actingScoreInput" type="number" min="0" max="10" step="0.5" class="admin-input" />
+</div>
+
+
+<div class="admin-field">
+<label>Cinematography & Visuals</label>
+<input id="cinemaScoreInput" type="number" min="0" max="10" step="0.5" class="admin-input" />
+</div>
+
+
+<div class="admin-field">
+<label>Music & Sound Design</label>
+<input id="musicScoreInput" type="number" min="0" max="10" step="0.5" class="admin-input" />
+</div>
+
+
+<div class="admin-field">
+<label>Final Verdict</label>
+<input id="finalVerdictInput" type="text" class="admin-input" />
+</div>
+
+
+<div class="admin-actions">
+<button id="saveReviewBtn" class="btn save-btn">Save</button>
+<button id="resetReviewBtn" class="btn reset-btn">Reset</button>
+<button id="closeAdminBtn" class="btn close-btn">Close</button>
+</div>
+</div>
+</div>
+
+
+<script src="movie.js"></script>
+</body>
+</html>

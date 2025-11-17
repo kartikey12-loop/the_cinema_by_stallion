@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Leaderboard — The Savvy Frames</title>
+  <meta name="description" content="Top cinephiles of The Savvy Frames." />
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/firebase-init.js" type="module"></script>
+  <script defer src="js/leaderboard.js" type="module"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="movies.html">Movies</a>
+        <a href="events.html">Events</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="join.html">Join Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta"><a href="join.html" class="button">Join Now</a></div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h1 class="section-title gold-text">Leaderboard</h1>
+      <div id="leaderboard" class="grid leaderboard-grid" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  background: #000 url("assets/img/bg.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #111, black);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* DISCUSSION CARD */
+.discussion-card {
+    background: #141414;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.discussion-card h2 {
+    text-align: center;
+}
+
+.info p {
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.join-btn {
+    display: block !important;
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    padding: 14px 20px !important;
+    margin: 15px 0 !important;
+
+    background: linear-gradient(90deg, #FFD700, #FFA500) !important; /* PURE GOLD */
+    color: #000 !important; /* BLACK TEXT */
+
+    text-decoration: none !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.45) !important;
+    transition: 0.25s ease !important;
+}
+.join-btn:hover {
+    background: linear-gradient(90deg, #FFEA4F, #FFB732) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.65) !important;
+}
+
+
+.note {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* FILM PREVIEW */
+.film-preview {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.film-box {
+    display: flex;
+    gap: 20px;
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.film-box img {
+    width: 180px;
+    border-radius: 12px;
+}
+
+.film-details h3 {
+    margin-top: 0;
+}
+
+.genre {
+    margin-top: 5px;
+    color: #d6b400;
+}
+
+/* GUIDELINES */
+.guidelines {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.guidelines ul {
+    padding-left: 20px;
+}
+
+.guidelines li {
+    margin-bottom: 8px;
+}
+button, a.join-btn {
+    background: linear-gradient(90deg, #FFD700, #FFA500) !important;
+    color: #000 !important;
+}

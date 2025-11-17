@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* HEADER */
+.circle-header {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                url('https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+}
+
+.circle-header h1 {
+    font-family: 'Playfair Display', serif;
+    color: gold;
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.circle-header p {
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+/* JOIN SECTION */
+.join-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.join-box {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 40px;
+    width: 450px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.join-box h2 {
+    font-family: 'Playfair Display', serif;
+    color: gold;
+    font-size: 2rem;
+}
+
+.join-box .desc {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.join-form .field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.field label {
+    color: gold;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+.join-btn {
+    background: gold;
+    padding: 14px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #d4af37;
+}

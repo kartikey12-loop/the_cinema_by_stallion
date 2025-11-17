@@ -1,0 +1,213 @@
+/* ========== GLOBAL ========== */
+body {
+    background: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ========== MOVIE DETAILS SECTION ========== */
+.movie-details {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    align-items: flex-start;
+}
+
+/* Small Movie Poster */
+.detail-poster {
+    width: 300px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+/* Movie Info Section */
+.detail-text {
+    flex: 1;
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.detail-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* ========== SIMILAR MOVIES SECTION ========== */
+.similar-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.gold-text {
+    color: rgb(245, 189, 2);
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* GRID — EXACTLY 6 MOVIES */
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* Movie Posters in Grid (SMALL & EQUAL SIZE) */
+.similar-grid img {
+    width: 160px;
+   
+    height: auto;         /* fixed height */
+    object-fit: cover;     /* prevent stretching */
+    border-radius: 6px;
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+.movie-card .card-body {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+
+/* Hover Effect */
+.similar-grid img:hover {
+    transform: scale(1.04);
+}
+
+/* Hide everything after 6 */
+.similar-grid > a:nth-child(n+7) {
+    display: none;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+    .similar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .movie-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-poster {
+        width: 200px;
+    }
+
+    .similar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+/* ======= CUSTOM HEADER ======= *//* ========== GLOBAL ========== */
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container { width: 90%; max-width: 1200px; margin: auto; }
+
+/* existing movie-details and similar styles kept (paste your original file's rest) */
+/* ... (your previous css content goes here) ... */
+
+/* ========== ADMIN UI ========== */
+.admin-btn {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  background: rgba(245,189,2,0.95);
+  border: none;
+  color: #000;
+  padding: 8px 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1200;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+.admin-panel {
+  position: fixed;
+  right: 20px;
+  top: 70px;
+  width: 340px;
+  max-width: calc(100% - 40px);
+  background: rgba(8,8,8,0.96);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  z-index: 1300;
+  display: none; /* toggled via JS */
+}
+.admin-panel[aria-hidden="false"] { display: block; }
+.admin-panel-inner h3 { margin-top: 0; color: #fff; }
+.admin-field { margin-bottom: 10px; display: flex; flex-direction: column; gap: 6px; }
+.admin-field label { font-size: 13px; color: #ddd; }
+.admin-field input[type="number"],
+.admin-field input[type="text"] {
+  background: #0f0f0f;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.admin-actions { display:flex; gap:8px; margin-top:8px; }
+.btn { background: rgb(245,189,2); border: none; padding: 8px 10px; border-radius:6px; cursor:pointer; font-weight:700; }
+.btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.08); color: #ddd; }
+.admin-note { font-size: 12px; color: #aaa; margin-top:10px; }
+
+/* Make cinemeter box values more targetable */
+.cinemeter-box p { margin: 5px 0; }
+.cinemeter-box .score { font-weight: 700; margin-left: 6px; color: #fff; }
+
+/* small responsive adjustment */
+@media (max-width: 700px) {
+  .admin-panel { right: 10px; top: auto; bottom: 18px; width: calc(100% - 36px); }
+  .admin-btn { top: 12px; right: 12px; padding: 6px 10px; }
+}
+
+.custom-header {
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid rgb(245, 189, 2);
+}
+
+.cinemeter-title {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #c084fc;
+  font-weight: 700;
+}
+
+.cinemeter-box {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 3px solid #c084fc;
+}
+
+.cinemeter-box p {
+  margin: 5px 0;
+}
+

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.feature-header {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  border-bottom: 1px solid rgba(255,215,0,0.2);
+}
+
+.feature-header h1 {
+  color: gold;
+  font-size: 2.5rem;
+}
+
+.feature-header p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.feature-container {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  align-items: flex-start;
+}
+
+.poster-box img {
+  width: 330px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+}
+
+.content-box {
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 2.2rem;
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  color: #FFD700;
+  margin-top: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6rem;
+}
+
+@media (max-width: 800px) {
+  .feature-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .poster-box img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+#movieGenres {
+    color: gold;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+/* WATCH TRAILER BUTTON */
+.watch-trailer-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: gold;
+    color: black;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.watch-trailer-btn:hover {
+    background: #e6c100;
+}
+
+/* TRAILER MODAL */
+.trailer-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+}
+
+.trailer-content {
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+}
+
+.trailer-content iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,215,0,0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 40px;
+    color: gold;
+    cursor: pointer;
+}
+

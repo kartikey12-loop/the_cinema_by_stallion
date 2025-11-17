@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Savvy Frames — The Cinema by Stallion</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="logo">
+        <h1>The Cinema</h1>
+        <span class="by-stallion">by Stallion</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="join.html">Join Us</a>
+        <a href="contact.html">Contact Us</a>
+        
+
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+
+    <!-- CINEPHILE CIRCLE -->
+    <section class="cinephile-section">
+      <div class="cinephile-container">
+        <h2 class="cinephile-title">Cinephile Circle</h2>
+        <p class="cinephile-subtext">A weekly gathering of passionate film lovers.</p>
+
+        <div class="cinephile-cards">
+          <div class="cine-card">
+            <h3>This Week’s Feature</h3>
+            <p class="cinepara">A masterpiece chosen for deep analysis.</p>
+            <a href="weekly-feature.html" class="cine-btn">View Film</a>
+          </div>
+
+          <div class="cine-card">
+            <h3>Weekly Discussion</h3>
+            <p class="cinepara">Break down themes, characters & cinematography.</p>
+            <a href="join-disscusion.html" class="weekly-btn">Join Discussion</a>
+          </div>
+
+          <div class="cine-card">
+            <h3>Become a Member</h3>
+            <p class="cinepara">Access reports, polls & breakdowns.</p>
+            <a href="join-circle.html" class="cine-btn">Join the Circle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TRENDING -->
+    <section id="trending-section" class="section container">
+      <h2 class="section-title gold-text">Trending Movies</h2>
+      <div id="trendingGrid" class="movies-grid"></div>
+    </section>
+
+<!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1 class="gold-text hero-title">The Savvy Frames</h1>
+        <p class="hero-sub">
+          A fresh film-review hub delivering honest takes, smart breakdowns & cinematic insights.
+        </p>
+        <p class="hero-sub" style="margin-top: 5px; font-weight:600;">
+          Coming Soon
+         </p> 
+      </div>
+    </section>
+
+    <!-- UPCOMING -->
+    <section id="upcoming-movies" class="section container fade-in">
+      <h2 class="section-title gold-text">Upcoming Movies</h2>
+      <div id="upcomingGrid" class="grid movies-grid"></div>
+      <div class="center">
+        <a href="upcoming.html" class="button ghost">View All Upcoming Movies</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="gold-text small">The Savvy Frames</h3>
+        <p class="muted">Curated screenings & a community of movie lovers.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/the_cinema_by_stallion?igsh=MTF4djU4MHRrbm5hbg==" target="_blank">
+            <img src="insta1.jfif" class="social-icon" alt="Instagram">
+          </a>
+          <a href="#"><img src="youtube.png" class="social-icon"></a>
+          <a href="#"><img src="x.png" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <small>© 2025 The Cinema by Stallion — The Savvy Frames</small>
+      <small class="muted">Movie data & images provided by TMDb.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="movie.js"></script>
+</body>
+</html>
