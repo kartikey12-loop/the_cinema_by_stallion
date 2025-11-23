@@ -1,6 +1,6 @@
 // movie.js
 
-const API_KEY = "7c469a64868a6a2348835f03d4900d49";
+const API_KEY = ".     ";//API KEY TO BE INSERTED 
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 const BANNER_URL = "https://image.tmdb.org/t/p/original";
